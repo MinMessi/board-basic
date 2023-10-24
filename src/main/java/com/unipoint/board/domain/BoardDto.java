@@ -10,6 +10,7 @@ public class BoardDto {
     private int     view_cnt;
     private int     comment_cnt;
     private Date    reg_date;
+    private Date    up_date;
 
     @Override
     public boolean equals(Object o) {
@@ -74,6 +75,14 @@ public class BoardDto {
         this.reg_date = reg_date;
     }
 
+    public Date getUp_date() {
+        return up_date;
+    }
+
+    public void setUp_date(Date up_date) {
+        this.up_date = up_date;
+    }
+
     @Override
     public String toString() {
         return "BoardDto{" +
@@ -84,6 +93,7 @@ public class BoardDto {
                 ", view_cnt=" + view_cnt +
                 ", comment_cnt=" + comment_cnt +
                 ", reg_date=" + reg_date +
+                ", up_date=" + up_date +
                 '}';
     }
 }
